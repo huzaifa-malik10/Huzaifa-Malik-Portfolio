@@ -16,7 +16,7 @@ body {
     --Text: #111111;
     --Mutedtext: #555555;
     --On-hover: #38bdf8;
-    --cards: #f5f5f5;
+    --Cards: #f5f5f5;
     --borders: #e5e5e5;
 }
 
@@ -333,19 +333,23 @@ main {
     font-size: 1rem;
     line-height: 1.6;
     margin-top: 1rem;
+    text-align: center;
 }
+
+/* Project Section Code  */
 
 .cards-content {
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 1rem;
+    padding: 2rem;
     margin-top: 3rem
 }
 
 .cards {
     padding: 1rem;
     border-radius: 12px;
-    background-color: var(--On-hover);
+    background-color: var(--Cards);
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -367,4 +371,62 @@ main {
     line-height: 1.5;
     font-family: "Syne", sans-serif;
     text-align: center;
+}
+
+.heading h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Syne", sans-serif;
+    text-align: center;
+}
+
+.heading p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-family: "Syne", sans-serif;
+    text-align: center;
+}
+
+.heading span {
+    color: var(--On-hover);
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.img-wrapper img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(54, 188, 245, 0.581);
+}
+
+.project-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.project-btn a {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    border: 1px solid var(--Mutedtext);
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--Text);
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+    transition: 0.3s ease ;
+    margin: 0 auto;
+}
+
+.project-btn a:hover {
+    background: var(--On-hover);
+    color: var(--Bg);
+    transform: translateY(-2px);
 }
