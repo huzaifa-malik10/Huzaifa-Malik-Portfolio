@@ -28,7 +28,7 @@
 
             </div>
 
-            <div class="links">
+            <div class="links" id="navLinks">
 
                 <ul>
 
@@ -57,6 +57,14 @@
 
                     <i id="toggle-off" class="fa-solid fa-toggle-off"></i>
                     <i id="toggle-on" class="fa-solid fa-toggle-on"></i>
+
+                </div>
+
+                <span class="divider">|</span>
+
+                <div class="hamburger" id="hamburger">
+
+                    <i class="fa-solid fa-bars"></i>
 
                 </div>
 
@@ -270,7 +278,7 @@
 
                 </div>
 
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
 
                     <div class="row">
 
@@ -293,9 +301,11 @@
 
                     <div class="row">
 
-                        <button type="submit" onclick="location.href='#Home'">Submit</button>
+                        <button type="submit">Send Message</button>
 
                     </div>
+
+                    <div id="formMessage"></div>
 
                 </form>
 
