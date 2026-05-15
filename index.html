@@ -35,7 +35,7 @@
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Contact">Contact</a></li>
 
                 </ul>
 
@@ -45,7 +45,7 @@
 
                 <div class="cta-wrapper">
 
-                    <button class="cta-btn">Get In Touch</button>
+                    <button class="cta-btn" onclick="location.href='#Contact'">Get In Touch</button>
 
                 </div>
 
@@ -90,7 +90,7 @@
 
                 <div class="img">
 
-                    <img src="im-placeholder.jpg" alt="Image">
+                    <img src="I'm me.png" alt="Image">
 
                 </div>
 
@@ -100,7 +100,7 @@
 
                 <div class="cta-wrapper">
 
-                    <button class="cta-btn hero-btn">View Projects</button>
+                    <button class="cta-btn hero-btn" onclick="location.href='#Projects'">View Projects</button>
 
                 </div>
 
@@ -169,7 +169,8 @@
 
                 <h1>My <span>Projects</span></h1>
 
-                <p>A collection of projects built to <span>practice frontend development</span>, improve problem-solving skills, and
+                <p>A collection of projects built to <span>practice frontend development</span>, improve problem-solving
+                    skills, and
                     explore <span>modern web design</span>.
                 </p>
 
@@ -262,37 +263,48 @@
 
                 <div class="contact-content">
 
-                    <img src="im-placeholder.jpg" alt="my-img">
+                    <img src="I'm me.png" alt="my-img">
 
-                    <h5>Passionate about creating simple, modern, and user-friendly interfaces.</h5>
+                    <h5>Passionate about creating simple, <span>modern</span>, and <span>user-friendly
+                            interfaces.</span></h5>
 
                 </div>
 
-                <div class="contact-form">
+                <form class="contact-form">
 
-                    <form action="#">
+                    <div class="row">
 
                         <input type="text" placeholder="Your Name">
-
                         <input type="email" placeholder="Your Email">
+
+                    </div>
+
+                    <div class="row-single">
 
                         <input type="text" placeholder="Your Phone">
 
+                    </div>
+
+                    <div class="row">
+
                         <textarea placeholder="message"></textarea>
 
-                        <a href="#">Send Message</a>
+                    </div>
 
-                    </form>
+                    <div class="row">
 
-                </div>
+                        <button type="submit" onclick="location.href='#Home'">Submit</button>
+
+                    </div>
+
+                </form>
+
 
                 <div class="socials">
 
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
-
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/huzaifa-malik10"><i class="fa-brands fa-github"></i></a>
 
                 </div>
 
