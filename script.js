@@ -61,7 +61,6 @@ if (form && formMessage) {
     const messageInput = form.querySelector('textarea');
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault();
 
         const name = nameInput.value.trim();
         const email = emailInput.value.trim();
@@ -72,21 +71,20 @@ if (form && formMessage) {
         formMessage.classList.remove("error", "success");
 
         if (name === "" || email === "" || message === "") {
+            e.preventDefault();
             formMessage.textContent = "Please fill all fields";
             formMessage.classList.add("error");
             return;
         }
 
         if (!emailPattern.test(email)) {
+            e.preventDefault();
             formMessage.textContent = "Please enter a valid email";
             formMessage.classList.add("error");
             return;
         }
 
-        formMessage.textContent = "Message sent successfully!";
-        formMessage.classList.add("success");
-
-        form.reset();
+        formMessage.textContent = "Sending..."; // optional
     });
 }
 

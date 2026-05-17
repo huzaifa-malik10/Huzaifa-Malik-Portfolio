@@ -212,7 +212,7 @@
 
                     <div class="img-wrapper">
 
-                        <img src="card-img2.png" alt="image">
+                        <img src="assets/card-img2.png" alt="image">
 
                     </div>
 
@@ -278,37 +278,26 @@
 
                 </div>
 
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="5ce4b4c1-e73d-426f-b6b0-247cfc66e02e">
 
                     <div class="row">
-
-                        <input type="text" placeholder="Your Name">
-                        <input type="email" placeholder="Your Email">
-
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
 
                     <div class="row-single">
-
-                        <input type="text" placeholder="Your Phone">
-
+                        <input type="text" name="phone" placeholder="Your Phone">
                     </div>
 
                     <div class="row">
-
-                        <textarea placeholder="message"></textarea>
-
+                        <textarea name="message" placeholder="Your Message" required></textarea>
                     </div>
 
-                    <div class="row">
-
-                        <button type="submit">Send Message</button>
-
-                    </div>
-
-                    <div id="formMessage"></div>
+                    <button type="submit">Send Message</button>
 
                 </form>
-
 
                 <div class="socials">
 
@@ -324,6 +313,33 @@
 
     </main>
 
+    <!-- Footer Section Code  -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2 class="footer-logo">HUZΛIFA</h2>
+
+            <p class="footer-text"> Building modern frontend experiences with clean UI and smooth interactions.</p>
+
+            <div class="socials">
+
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/huzaifa-malik10"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 Huzaifa Malik. All rights reserved.</p>
+
+        </div>
+
+    </footer>
 
     <script src="script.js"></script>
 </body>

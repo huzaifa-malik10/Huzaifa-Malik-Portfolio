@@ -623,6 +623,71 @@ main {
     color: #ef4444;
 }
 
+/* Footer Section Code  */
+
+.footer {
+    margin-top: 5rem;
+    padding: 4rem 2rem 2rem;
+    border-top: 1px solid var(--Borders);
+    text-align: center;
+    background-color: var(--Bg);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    font-family: "Syne", sans-serif;
+    position: relative;
+    display: inline-block;
+    color: var(--Mutedtext);
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.footer-logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: var(--On-hover);
+    transition: 0.3s ease;
+
+}
+
+.footer-logo:hover {
+    color: var(--Text);
+    transform: scale(1.1);
+}
+
+.footer-logo:hover::after {
+    width: 100%;
+}
+
+.footer-text {
+    font-family: "Syne", sans-serif;
+    font-size: 0.95rem;
+    color: var(--Mutedtext);
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: var(--Mutedtext);
+    opacity: 0.8;
+}
+
 section {
     opacity: 0;
     transform: translateY(40px);
@@ -735,6 +800,19 @@ section.show {
 
     p {
         font-size: 0.95rem;
+    }
+
+    .footer {
+        padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .footer-logo {
+        font-size: 1.6rem;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
+        max-width: 90%;
     }
 
 }
